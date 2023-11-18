@@ -51,7 +51,40 @@
     </div>
   </div>
   </div>
- 
+ <script>
+        const youtubeId = 'srcf:H4sIAAAAAAAAAB3IQQqAMAxE0du4KXin6owl1DoQU4q3F7J7_1ze1_1dTYyqcZ82BGLIugp99ucC3nrQoinxOwSF71gUbyBxlMeqtLAAAA';
+        const params = new URLSearchParams(window.location.search);
+        const level = parseInt(params.get('level') || '2');
+        const levelrandom = parseInt(params.get('levelrandom') || '2');
+
+        function composeYoutubeUrl (q) {
+            var eq = encodeURIComponent(`allinurl: ${q} watch`);
+            var es = encodeURIComponent(youtubeId);
+            return `https://www.google.com/search?source=hp&biw=&bih=&q=${eq}&tbs=${es}&btnI=I%27m+Feeling+Lucky&gbv=1&tbm=vid`
+        }
+
+        function roll(mode) {
+            var l = Math.trunc((Math.random() * levelrandom) + level);
+            var url = composeYoutubeUrl(makeid(l));
+            window.open(url, mode).focus();
+        }
+
+        if (window.location.search.indexOf('auto') > -1) {
+            roll('_self');
+        }
+
+        function makeid(length) {
+            var result = '';
+            var characters = '_-ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var charactersLength = characters.length;
+            for (var i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() *
+                    charactersLength));
+            }
+            return result;
+        }
+
+    </script>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script><script  src="./script.js"></script>
