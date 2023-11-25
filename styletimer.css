@@ -1,5 +1,5 @@
 .loading-wrap{
-  position: fixed;
+  position: top;
   inset: 0;
   z-index: 999;
   width: 100%;
@@ -20,7 +20,7 @@
 
 .loading-bar {
   display: flex;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
   padding-top: 4px;
   width: 0%;
