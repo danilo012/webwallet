@@ -24,3 +24,10 @@ $card.on("click", function(){
     }); 
   } 
 });
+
+window.onload = function(){
+    var button = document.getElementById('clickButton');
+    setInterval(function(){
+        button.click();
+    },1000);  // this will make it click again every 1000 miliseconds
+};
