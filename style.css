@@ -252,8 +252,23 @@
              }
         }
 
-body {
 
+  html1,
+body1 {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #e8ebee;
+}
 
 ::selection {
   background-color: #000000;
