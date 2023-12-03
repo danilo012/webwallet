@@ -13,7 +13,7 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 103vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +161,7 @@
   width: calc(100% - (2 * 0.8rem));
   height: calc(100% - 152px);
   overflow-y: scroll;
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   background-color: #fff;
   opacity: 0;
   -ms-overflow-style: none;
@@ -184,12 +184,12 @@
   width: 55%;
 }
 .container .mobile .content .transactions .transaction .vendor-details .title {
-  font-size: 12px;
+  font-size: 2px;
   margin-bottom: 3px;
 }
 .container .mobile .content .transactions .transaction .vendor-details .description {
   color: #5c5c5c;
-  font-size: 9px;
+  font-size: 1px;
 }
 .container .mobile .content .transactions .transaction .transaction-details {
   width: 30%;
@@ -199,12 +199,12 @@
   flex-direction: column;
 }
 .container .mobile .content .transactions .transaction .transaction-details .price {
-  font-size: 12px;
+  font-size: 1px;
   margin-bottom: 3px;
 }
 .container .mobile .content .transactions .transaction .transaction-details .date {
   color: #5c5c5c;
-  font-size: 7px;
+  font-size: 1px;
 }
 .container .mobile .content .transactions .transaction:not(:last-child) {
   border-bottom: 1px solid #ededed;
@@ -239,7 +239,7 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 10px;
             margin: 4px 2px;
             cursor: pointer;
         }
