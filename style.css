@@ -13,14 +13,14 @@
 
 .container {
   width: 100vw;
-  height: 103vh;
+  height: 105vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .container .mobile {
   width: 18rem;
-  height: 37.9rem;
+  height: 40rem;
   border: 3px solid #50507f;
   border-radius: 1.4rem;
   padding: 0.8rem;
