@@ -13,14 +13,14 @@
 
 .container {
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .container .mobile {
   width: 18rem;
-  height: 40rem;
+  height: 37.9rem;
   border: 3px solid #50507f;
   border-radius: 1.4rem;
   padding: 0.8rem;
@@ -168,7 +168,7 @@
   scrollbar-width: none;
 }
 .container .mobile .content .transactions .transaction {
-  padding: 10px;
+  padding: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
