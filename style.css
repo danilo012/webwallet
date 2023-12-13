@@ -356,3 +356,62 @@ body1 {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+.shibaconvert {
+  position: fixed;
+  top: 200px;
+  left: 1%;
+  width: 123px;
+  height: 127px;
+  background-color:black;
+  border-radius: 5%;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+ .shibaconvert button {
+   position: relative;
+  background-image: url(https://cdn-icons-png.flaticon.com/128/5167/5167425.png?ga=GA1.1.858743669.1702430253&semt=ais);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  border-radius: 100%;
+  font-size: 40px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  cursor: pointer;
+}
+
+.shibaconvert.active button {
+  transform: rotate(135deg);
+}
+
+ .shibaconvert ul {
+   height: 1000px;
+   width: 800px;
+   position: absolute;
+  top: 100px;
+  left: 50%;
+  background-color: green;
+  display: grid;
+  grid-gap: 10px;
+  border-radius: 25px;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+ .shibaconvert.active ul {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+  bottom: 90px;
+ }
