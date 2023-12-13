@@ -40,3 +40,13 @@ const resetTooltip = (e) => {
 
 copyButton.addEventListener("click", (e) => copyText(e));
 copyButton.addEventListener("mouseover", (e) => resetTooltip(e));
+
+
+
+
+
+
+const shibaconvert = document.querySelector('.shibaconvert');
+shibaconvert.addEventListener('click', ()=> {
+  shibaconvert.classList.toggle('active')
+})
