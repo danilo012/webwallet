@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"> 
- <head>  
-   <meta name="monetag" content="508faa19e8228f0f0b11eccc4eb49c89">
-<meta name="viewport" content="width=device-width"> 
+ <head> 
+  <meta name="monetag" content="508faa19e8228f0f0b11eccc4eb49c89">
+<meta name="viewport" content="width=device-width">
   <title>ECHOZONE</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
@@ -127,7 +127,7 @@ class Navigation extends React.Component {
       React.createElement("div", { class: "icon-menu" }, /*#__PURE__*/
       React.createElement("i", { class: "material-icons" }, "menu")), /*#__PURE__*/
 
-      React.createElement("div", { class: "title" }, "Jeryan royate "), /*#__PURE__*/
+      React.createElement("div", { class: "title" }, "Jeryan royate"), /*#__PURE__*/
       React.createElement("div", { class: "icon-notification" }, /*#__PURE__*/
       React.createElement("i", { class: "material-icons" }, "notifications"))));
 
@@ -140,7 +140,7 @@ class Wallet extends React.Component {
       React.createElement("div", { class: "wallet" }, /*#__PURE__*/
       React.createElement("p", { class: "wallet-data" }, " ", this.props.balance, " "), /*#__PURE__*/
       React.createElement("p", { class: "wallet-comparison " }, /*#__PURE__*/
-      React.createElement("span", { class: "success" }, this.props.tracking), "365 days.")));
+      React.createElement("span", { class: "success" }, this.props.tracking), " 365 days.")));
 
 
   }}
@@ -209,12 +209,11 @@ class Cryptolist extends React.Component {
     this.cryptocoins = [
     {
       name: 'Rental bonus',
-      value: 0,
-    
+      value: 0 },
 
     {
       name: 'Refferal bonus',
-      value: 0,];
+      value: 0 }];
 
 
 
@@ -236,8 +235,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.balance = 0;
-    this.tracking = '(₱0.05 - ₱3.00 valid until 0-0-24)';
+    this.balance = 95.51;
+    this.tracking = '₱0.05 - ₱3.00 valid until 11-11-24(FREE RENTAL VERSION)';
   }
   render() {
     return /*#__PURE__*/(
@@ -254,9 +253,11 @@ class App extends React.Component {
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('app'));</script></body></html>
 
  
- 
+ <!doctype html>
+<html lang="en"> 
  <head> 
-   <meta name="viewport" content="width=device-width"> 
+  <meta name="viewport" content="width=device-width">
+
   <title>ECHOZONE </title> 
   <link rel="stylesheet" href="./style.css"> 
  <style type="text/css" id="dcoder_stylesheet">@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -382,7 +383,7 @@ body {
         "> 
     <div class="popup__content"> 
      <div class="popup__skip-btn">
-       Skip in 5s 
+       Skip in 23s 
      </div> 
      <p class="popup__logo">ECHOZONE</p> 
      <h3 class="popup__title">earn views, earn money</h3> 
@@ -424,7 +425,7 @@ openNext();</script>
 
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpoetic-choux-da9fed.netlify.app&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=recent+visitor&edge_flat=false"/></a>
 
-    </div>
+      </div>
           </p></div> 
    </div> 
   </div> <!-- partial --> 
@@ -434,14 +435,14 @@ openNext();</script>
 const skipBtn = document.querySelector('.popup__skip-btn');
 const visitBtn = document.querySelector('.popup__link');
 
-let remainingTime = 5;
+let remainingTime = 23;
 let allowedToSkip = false;
 let popupTimer;
 
 const createPopupCookie = () => {
-  let expiresDays = 30;
+  let expiresDays = 0;
   let date = new Date();
-  date.setTime(date.getTime() + expiresDays * 24 * 60 * 60 * 1000);
+  date.setTime(date.getTime() + expiresDays * 0 * 0 * 0* 1000);
   let expires = 'expires=' + date.toUTCString();
   document.cookie = `popupCookie=true; ${expires}; path=/;`;
 };
