@@ -464,7 +464,7 @@ const createPopupCookie = () => {
 const showAd = () => {
   popup.classList.add('active');
   popupTimer = setInterval(() => {
-    skipBtn.innerHTML = `Skip in ${remainingTime}s`;
+    skipBtn.innerHTML = `views counted after ${remainingTime}s`;
     remainingTime--;
 
     if (remainingTime < 0) {
